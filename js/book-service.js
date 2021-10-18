@@ -80,7 +80,7 @@ function savePageIdxToStorage() {
 
 
 function addBook(bookNmae, bookPrice) {
-    var book = _createBook(bookNmae, bookPrice, "../img/book1.png")
+    var book = _createBook(bookNmae, bookPrice, "img/book1.png")
     gBooks.push(book)
     _saveBooksToStorage()
 
@@ -117,18 +117,18 @@ function _createBooks() {
     var books = loadFromStorage(KEY)
     if (!books || !books.length) {
         books = [
-            _createBook('It Ends With Us', '18', "../img/img1.PNG", 0),
-            _createBook('They Both Die at the End', '10', "../img/img2.PNG", 0),
-            _createBook('The Midnight Library', '8', "../img/img3.PNG", 0),
-            _createBook('The Silent Patient', '18', "../img/img4.PNG", 0),
-            _createBook('This is Going to Hurt', '83', "../img/img5.PNG", 0),
-            _createBook('Ugly Love', '56', "../img/img6.PNG", 0),
-            _createBook('Man\'s Search For Meaning ', '12', "../img/img7.PNG", 0),
-            _createBook('Atomic Habits', '98', "../img/img8.PNG", 0),
-            _createBook('Good Vibes, Good Life', '11', "../img/img9.PNG", 0),
-            _createBook('The Secret', '90', "../img/img10.PNG", 0),
-            _createBook('Thinking, Fast and Slow', '43', "../img/img11.PNG", 0),
-            _createBook('Leaders Eat Last', '39', "../img/img12.PNG", 0)
+            _createBook('It Ends With Us', '18', "img/img1.PNG", 0),
+            _createBook('They Both Die at the End', '10', "img/img2.PNG", 0),
+            _createBook('The Midnight Library', '8', "img/img3.PNG", 0),
+            _createBook('The Silent Patient', '18', "img/img4.PNG", 0),
+            _createBook('This is Going to Hurt', '83', "img/img5.PNG", 0),
+            _createBook('Ugly Love', '56', "img/img6.PNG", 0),
+            _createBook('Man\'s Search For Meaning ', '12', "img/img7.PNG", 0),
+            _createBook('Atomic Habits', '98', "img/img8.PNG", 0),
+            _createBook('Good Vibes, Good Life', '11', "img/img9.PNG", 0),
+            _createBook('The Secret', '90', "img/img10.PNG", 0),
+            _createBook('Thinking, Fast and Slow', '43', "img/img11.PNG", 0),
+            _createBook('Leaders Eat Last', '39', "img/img12.PNG", 0)
         ]
 
     }
