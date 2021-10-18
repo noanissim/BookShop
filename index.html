@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Shop</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body onload="onInit()">
+
+    <h1><span>Welcome to my book shop!</span></h1>
+    <button class="add-btn" type="button" onclick="openModalAddBook()" >Add book</button>
+
+    <div class="modal-add-book" >
+        <div class="modal-add-book-content" hidden>
+            <input type="text" class="input-add-name" placeholder="Enter book name">
+            <input type="text" class="input-add-price" placeholder="Enter price">
+            <button class="add-btn-input" onclick="onAddBook()">Add!</button>
+        </div>
+
+    </div>
+
+    <div class="modal-update" hidden></div>
+    <div class="main-paging-section">
+        <button class="prev-btn" onclick="onPrevPage()"> &lt; </button>
+        <span class="paging-section"></span>
+        <button class="next-btn" onclick="onNextPage()"> &gt; </button>
+    </div>
+    <section class="books-container">
+        <table class="books-table">
+            <thead class="books-thead">
+                <th>ID</th>
+                <th class="title-book" value="title" onclick="onSetSort(this.innerText)" >Title</th>
+                <th class="price-book" value="price" onclick="onSetSort(this.innerText)">Price</th>
+                <th>Actions</th>
+                <th>image</th>
+            </thead>
+            <tbody class="books-tbody"></tbody>
+        </table>
+    </section>
+
+   
+    <div class="modal" hidden>
+        <h5></h5>
+        <h6></h6>
+        <p></p>
+        <div></div>
+        <h4>Rating: <span></span></h4>
+
+      <form onsubmit="onRatingChange()">
+        <button type="button" class="minus-rating" onclick="onChangeRate(-1)">-</button>
+        <input type="number" min="0" max="10" class="input-rate">
+        <button type="button" class="plus-rating" onclick="onChangeRate(1)">+</button>
+      </form>
+
+      <button onclick="onCloseModal()">Close</button>
+        
+    </div>
+
+    <script src="js/util-service.js"></script>
+    <script src="js/storage-service.js"></script>
+    <script src="js/book-service.js"></script>
+    <script src="js/book-controller.js"></script>
+
+
+
+
+</body>
+</html>

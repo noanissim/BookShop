@@ -1,0 +1,114 @@
+body {
+    font-family: Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    text-align: center;
+    background-image: url('https://i2r9x7i6.stackpathcdn.com/app/uploads/2018/06/Bookstore-Bookshelves_iStock-541137274_Get-Lit_EL-1120x630.jpeg') ;
+    background-size:cover;
+}
+
+h1 span{
+    background-color: rgba(241, 241, 241, 0.726);
+    font-family: 'Lato', cursive;
+    font-family: 'Nanum Gothic', sans-serif;
+
+}
+
+.modal-add-book{
+    height: 5vh;
+}
+
+.books-container{
+    position: relative;
+    width: 90vw;
+    height: 70vh;
+}
+
+table.books-table, td, th{
+    background-color: rgba(241, 241, 241, 0.986);
+    border-collapse: collapse;
+    padding: 15px;
+    margin: 50px auto;
+    border: 1px solid rgb(71, 68, 68);
+}
+
+
+.delete-btn {
+    float: right;
+    cursor: pointer;
+}
+
+.read-btn, .update-btn, .delete-btn, .add-btn, .add-btn-input, .buy-btn{
+    background-color: #d86640; 
+    margin: 5px;
+    border: 1px solid rgb(92, 91, 91);
+    color: white;
+    width: 100px;
+    height: 30px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
+.buy-btn{
+    background-color: rgb(65, 167, 65);
+}
+.buy-btn:hover{
+    cursor: pointer;
+    background-color: rgb(39, 129, 39);
+}
+  
+  .read-btn:hover, .update-btn:hover, .delete-btn:hover, .add-btn:hover, .add-btn-input:hover{
+      cursor: pointer;
+      background-color: #d67839; 
+}
+
+.title-book:hover, .price-book:hover{
+cursor: pointer;
+background-color: lightgrey;
+}
+
+.buttons-section{
+    display:flex;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 100%;
+}
+
+.book-img{
+    width: 120px;
+    height: 120px;
+}
+
+.modal {
+    background-color: lightgray;
+    padding: 10px;
+    position: fixed;
+    top: 0;
+    left: 50%;
+    height: 100vh;
+    min-width: 300px;
+    text-align: center;
+}
+
+.marked{
+    background-color: rgb(175, 172, 172);
+}
+
+.main-paging-section button{
+    margin: 20px 2px;
+    border: 1px solid grey;
+    color: rgb(134, 24, 24);
+    width: 60px;
+    height: 60px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 2rem;
+}
+
+
+input{
+    padding: 8px;
+    margin: 5px;
+}
+
